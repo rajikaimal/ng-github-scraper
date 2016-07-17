@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="ngGHSC">
 <head>
 	<title>ng-Github scraper</title>
 </head>
 <body>
-	<h2> Github-scraper </h2>
-	<span> Type a github username and hit 'Go !' </span>
-    <br />
-    <input ng-model="hello" /> {{ hello }}
+	<div ng-controller="userCtrl">
+		<h2> Github-scraper </h2>
+		<span> Type a github username and hit 'Go !' </span>
+	    <br />
+	</div>
 	<div ng-view></div>
 	<script src="bundle.js"></script>
 </body>
