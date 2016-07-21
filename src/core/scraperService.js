@@ -6,8 +6,6 @@ app.service('scraperService', function($location) {
 	return {
 		saveUserData: function(data) {
 			userdata = data;
-			console.log('user');
-			console.log(userdata);
 			$location.path('/user');
 		},
 		getUserData: function() {

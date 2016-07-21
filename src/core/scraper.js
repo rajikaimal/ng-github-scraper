@@ -11,7 +11,6 @@ app.controller('scraperCtrl', ['$scope', '$location', '$http', 'scraperService',
 			.then(function(response) {
 				var data = response.data.user;
 				scraperService.saveUserData(data);
-				console.log('done ...');
 			}).catch(function(err) {
 				console.log('err', err);
 			});

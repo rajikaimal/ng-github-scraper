@@ -14,8 +14,8 @@ app.config(['$locationProvider', '$routeProvider', function($locationProvider, $
 }]);
 
 app.controller('userCtrl', ['$scope', '$location', '$http', 'scraperService', function($scope, $location, $http, scraperService) {
-	var userData = scraperService.getUserData();
-	console.log(userData);
-	$scope.imagesrc = userData.avatar_url;
-	$scope.username = userData.login;
+	//var userData = scraperService.getUserData();
+	//console.log(userData);
+	//$scope.imagesrc = userData.avatar_url;
+	//$scope.username = userData.login;
 }]);
